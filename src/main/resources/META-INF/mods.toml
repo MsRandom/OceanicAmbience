@@ -1,0 +1,14 @@
+modLoader="javafml" #mandatory
+loaderVersion="[31,)"
+[[mods]]
+modId="oceanicambience"
+version="${file.jarVersion}"
+displayName="Oceanic Ambience"
+credits="Tazz (Art & Ideas), Coda (Art), Ms. Random (Code)"
+description='''<Placeholder description>'''
+[[dependencies.oceanicambience]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31,)"
+    ordering="NONE"
+    side="BOTH"
