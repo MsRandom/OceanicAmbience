@@ -1,4 +1,4 @@
-package mod.coda.oceanicambience;
+package net.msrandom.oceanicambience;
 
 import net.minecraftforge.fml.common.Mod;
 

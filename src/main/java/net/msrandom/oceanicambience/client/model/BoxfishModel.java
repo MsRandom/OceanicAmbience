@@ -1,11 +1,11 @@
-package mod.coda.oceanicambience.client.model;
+package net.msrandom.oceanicambience.client.model;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import mod.coda.oceanicambience.entity.BoxfishEntity;
-import net.minecraft.client. renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.util.math.MathHelper;
+import net.msrandom.oceanicambience.entity.BoxfishEntity;
 
 public class BoxfishModel extends EntityModel<BoxfishEntity> {
     public ModelRenderer body;

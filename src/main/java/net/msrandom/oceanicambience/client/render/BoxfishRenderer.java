@@ -1,11 +1,11 @@
-package mod.coda.oceanicambience.client.render;
+package net.msrandom.oceanicambience.client.render;
 
-import mod.coda.oceanicambience.OceanicAmbience;
-import mod.coda.oceanicambience.client.model.BoxfishModel;
-import mod.coda.oceanicambience.entity.BoxfishEntity;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.util.ResourceLocation;
+import net.msrandom.oceanicambience.OceanicAmbience;
+import net.msrandom.oceanicambience.client.model.BoxfishModel;
+import net.msrandom.oceanicambience.entity.BoxfishEntity;
 
 public class BoxfishRenderer extends MobRenderer<BoxfishEntity, BoxfishModel> {
     private static final ResourceLocation[] TEXTURES = new ResourceLocation[4];

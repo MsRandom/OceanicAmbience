@@ -1,12 +1,12 @@
-package mod.coda.oceanicambience.item;
+package net.msrandom.oceanicambience.item;
 
-import mod.coda.oceanicambience.OceanicAmbience;
-import mod.coda.oceanicambience.entity.OAEntities;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.FishBucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.msrandom.oceanicambience.OceanicAmbience;
+import net.msrandom.oceanicambience.entity.OAEntities;
 
 import java.util.ArrayList;
 import java.util.List;

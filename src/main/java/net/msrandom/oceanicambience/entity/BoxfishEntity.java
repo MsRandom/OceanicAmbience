@@ -1,4 +1,4 @@
-package mod.coda.oceanicambience.entity;
+package net.msrandom.oceanicambience.entity;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ILivingEntityData;

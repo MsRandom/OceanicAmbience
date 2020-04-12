@@ -1,4 +1,4 @@
-package mod.coda.oceanicambience.item;
+package net.msrandom.oceanicambience.item;
 
 import net.minecraft.item.Food;
 
