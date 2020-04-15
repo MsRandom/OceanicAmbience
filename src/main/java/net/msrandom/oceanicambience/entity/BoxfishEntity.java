@@ -2,10 +2,10 @@ package net.msrandom.oceanicambience.entity;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ILivingEntityData;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.passive.fish.AbstractGroupFishEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
@@ -16,6 +16,7 @@ import net.minecraft.util.SoundEvents;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
+import net.msrandom.oceanicambience.item.OAItems;
 
 import javax.annotation.Nullable;
 
@@ -29,6 +30,12 @@ public class BoxfishEntity extends AbstractGroupFishEntity {
     protected void registerData() {
         super.registerData();
         this.dataManager.register(VARIANT, 0);
+    }
+
+    @Override
+    protected void registerAttributes() {
+        super.registerAttributes();
+        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(5);
     }
 
     public void writeAdditional(CompoundNBT compound) {
@@ -55,7 +62,7 @@ public class BoxfishEntity extends AbstractGroupFishEntity {
     }
 
     protected ItemStack getFishBucket() {
-        return new ItemStack(Items.TROPICAL_FISH_BUCKET);
+        return new ItemStack(OAItems.BOXFISH_BUCKET);
     }
 
     protected SoundEvent getAmbientSound() {

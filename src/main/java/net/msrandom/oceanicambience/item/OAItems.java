@@ -28,7 +28,7 @@ public class OAItems {
         return item;
     }
 
-    static Item.Properties makeProperties() {
+    public static Item.Properties makeProperties() {
         return new Item.Properties().group(GROUP);
     }
 }

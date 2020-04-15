@@ -1,13 +1,12 @@
 package net.msrandom.oceanicambience.client.model;
 
-import com.mojang.blaze3d.matrix.MatrixStack;
-import com.mojang.blaze3d.vertex.IVertexBuilder;
-import net.minecraft.client.renderer.entity.model.EntityModel;
+import com.google.common.collect.ImmutableList;
+import net.minecraft.client.renderer.entity.model.SegmentedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.util.math.MathHelper;
 import net.msrandom.oceanicambience.entity.BoxfishEntity;
 
-public class BoxfishModel extends EntityModel<BoxfishEntity> {
+public class BoxfishModel extends SegmentedModel<BoxfishEntity> {
     public ModelRenderer body;
     public ModelRenderer tail;
     public ModelRenderer fronthornright;
@@ -87,8 +86,8 @@ public class BoxfishModel extends EntityModel<BoxfishEntity> {
     }
 
     @Override
-    public void render(MatrixStack matrixStack, IVertexBuilder iVertexBuilder, int i, int i1, float v, float v1, float v2, float v3) {
-        body.render(matrixStack, iVertexBuilder, i, i1, v, v1, v2, v3);
+    public Iterable<ModelRenderer> getParts() {
+        return ImmutableList.of(body);
     }
 
     public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
